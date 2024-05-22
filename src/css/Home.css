@@ -1,0 +1,212 @@
+@font-face {
+  font-display: swap;
+
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/kumbh-sans-v22-latin-regular.woff2') format('woff2');
+
+}
+
+
+@font-face {
+  font-display: swap;
+
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/kumbh-sans-v22-latin-700.woff2') format('woff2');
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 125px;
+  padding-bottom: 30px;
+  font-family: 'Kumbh Sans';
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1115px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.cartImg {
+  width: 445px;
+  height: 445px;
+  border-radius: 15px;
+  margin-bottom: 32px;
+}
+
+.cartImages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  width: 88px;
+  height: 88px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.image:hover {
+  opacity: 0.5;
+}
+
+.cartImages .image.active,
+.cartImages .image:active {
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+
+.content__wrapper {
+  z-index: -1;
+}
+
+.content {}
+
+.content__desc {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: #FF7E1B;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.content__title {
+  font-size: 44px;
+  line-height: 48px;
+  margin-bottom: 34px;
+  font-weight: 700;
+}
+
+.content__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #69707D;
+  width: 445px;
+  margin-bottom: 24px;
+}
+
+
+
+.discWrapper {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-bottom: 10px;
+}
+
+.discountPrice {
+  font-size: 28px;
+  font-weight: 700;
+  width: 110px;
+  color: #1D2026;
+}
+
+.discountPercentage {
+  width: 51px;
+  height: 27px;
+  background-color: #FFEEE2;
+  color: #FF7E1B;
+  font-size: 16px;
+  padding: 4px;
+  font-weight: 700;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.realPrice {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #B6BCC8;
+  text-decoration: line-through;
+  margin-bottom: 32px;
+}
+
+
+.addCart {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.addCartChild {
+  display: flex;
+  align-self: center;
+  gap: 16px;
+}
+
+.addCartBtns {
+  display: flex;
+  align-items: center;
+  width: 157px;
+  height: 56px;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #F6F8FD;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.addBtn,
+.removeBtn {
+  background-color: inherit;
+  border: none;
+  color: #FF7E1B;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+.addBtn:hover {
+  opacity: 0.6;
+}
+
+
+
+.removeBtn:hover {
+  opacity: 0.6;
+}
+
+.addingCarts {
+  width: 272px;
+  height: 56px;
+  background-color: #FF7E1B;
+  color: #FFFFFF;
+  font-family: 'Kumbh Sans';
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.addingCarts:hover {
+  opacity: 0.7;
+}

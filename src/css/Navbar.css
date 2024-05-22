@@ -1,0 +1,175 @@
+@font-face {
+  font-display: swap;
+
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/kumbh-sans-v22-latin-regular.woff2') format('woff2');
+
+}
+
+
+@font-face {
+  font-display: swap;
+
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/kumbh-sans-v22-latin-700.woff2') format('woff2');
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Kumbh Sans';
+  padding-top: 18px;
+  padding-bottom: 10px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar__box {
+  background-color: #FFFFFF;
+  margin-bottom: 90px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLeft {
+  display: flex;
+  gap: 56px;
+  margin-right: auto;
+}
+
+.navLogo {
+  width: 137px;
+  height: 20px;
+}
+
+.navList {
+  display: flex;
+  gap: 32px;
+}
+
+.navItem {
+  color: #69707D;
+  font-size: 1px;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+
+.navbarRight__icon {
+  width: 22px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.navbarRight__avatar {
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbarRight__avatar:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 2px solid #FF7E1B;
+}
+
+.line {
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  background-color: #E4E9F2;
+}
+
+
+
+
+
+
+.navList a {
+  text-decoration: none;
+  color: #333;
+  padding: 32px 0;
+  position: relative;
+  font-size: 15px;
+  line-height: 26px;
+  color: #69707D;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+
+.navList a:hover {
+  color: #000;
+}
+
+
+.navList a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  background-color: #f97316;
+}
+.amountWrapper {
+  display: flex;
+
+}
+
+.prAmount {
+  margin-left: -12px;
+  margin-top: -5px;
+  border-radius: 6.5px;
+  width: 19px;
+  height: 13px;
+  background-color: #FF7E1B;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+}
