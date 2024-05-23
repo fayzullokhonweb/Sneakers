@@ -12,18 +12,20 @@ function Home() {
   const setAmount = (type) => {
     if (type === "decrease" && productAmount > 1) {
       setProductAmount((prev) => prev - 1);
-    } else if (type === "increase" && productAmount < 3) {
+    } else if (type === "increase" && productAmount < 9) {
+      // updated limit
       setProductAmount((prev) => prev + 1);
     }
   };
 
   const addToBag = () => {
     const newProduct = {
-      ...products,
+      id: selectedImage,
+      img: selectedImage,
       amount: productAmount,
     };
     dispatch(addProduct(newProduct));
-    setProductAmount(1); // Reset products amount to 1 after adding to cart
+    setProductAmount(1);
   };
 
   return (
@@ -32,22 +34,20 @@ function Home() {
         <div className="cart">
           <img className="cartImg" src={selectedImage} alt="hero img" />
           <div className="cartImages">
-            {products.map((product) => {
-              return (
-                <button
-                  key={product.id}
-                  onClick={() => setSelectedImage(product.img)}
-                >
-                  <img
-                    className={`image ${
-                      selectedImage === product.img ? "active" : ""
-                    }`}
-                    src={product.img}
-                    alt="image1"
-                  />
-                </button>
-              );
-            })}
+            {products.map((product) => (
+              <button
+                key={product.id}
+                onClick={() => setSelectedImage(product.img)}
+              >
+                <img
+                  className={`image ${
+                    selectedImage === product.img ? "active" : ""
+                  }`}
+                  src={product.img}
+                  alt="product"
+                />
+              </button>
+            ))}
           </div>
         </div>
 

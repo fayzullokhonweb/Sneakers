@@ -1,4 +1,3 @@
-// Navbar.jsx
 import React, { useState } from "react";
 import "../css/Navbar.css";
 import NavLinks from "./NavLinks";

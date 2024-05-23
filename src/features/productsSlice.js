@@ -31,6 +31,10 @@ const productsSlice = createSlice({
       });
       productsSlice.caseReducers.calculateTotal(state);
     },
+    clearCart: (state) => {
+      state.amount = 0;
+      state.products = [];
+    },
 
     changeAmount: (state, { payload }) => {
       const item = state.products.find((item) => item.id == payload.id);
@@ -58,5 +62,11 @@ const productsSlice = createSlice({
   },
 });
 
-export const { addProduct, removeProduct } = productsSlice.actions;
+export const {
+  addProduct,
+  removeProduct,
+  calculateTotal,
+  clearCart,
+  changeAmount,
+} = productsSlice.actions;
 export default productsSlice.reducer;

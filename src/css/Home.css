@@ -1,22 +1,17 @@
 @font-face {
   font-display: swap;
-
   font-family: 'Kumbh Sans';
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/kumbh-sans-v22-latin-regular.woff2') format('woff2');
-
 }
-
 
 @font-face {
   font-display: swap;
-
   font-family: 'Kumbh Sans';
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/kumbh-sans-v22-latin-700.woff2') format('woff2');
-
 }
 
 * {
@@ -27,7 +22,8 @@
 
 button {
   border: none;
-  background-color: inherit;
+  background-color: inherit; /* This can be changed to a specific color if needed */
+  cursor: pointer; /* Ensure that button shows as clickable */
 }
 
 .box {
@@ -77,9 +73,8 @@ button {
   border-radius: 10px;
 }
 
-
 .content__wrapper {
-  z-index: -1;
+  z-index: 1; /* Adjusted z-index to ensure content is above other elements */
 }
 
 .content {}
@@ -107,8 +102,6 @@ button {
   width: 445px;
   margin-bottom: 24px;
 }
-
-
 
 .discWrapper {
   display: flex;
@@ -145,13 +138,10 @@ button {
   margin-bottom: 32px;
 }
 
-
 .addCart {
   display: flex;
   flex-direction: column;
 }
-
-
 
 .addCartChild {
   display: flex;
@@ -171,23 +161,16 @@ button {
   text-align: center;
 }
 
-
 .addBtn,
 .removeBtn {
-  background-color: inherit;
+  background-color: #F6F8FD; /* Ensure buttons have a background color */
   border: none;
   color: #FF7E1B;
   font-size: 30px;
   cursor: pointer;
 }
 
-
-.addBtn:hover {
-  opacity: 0.6;
-}
-
-
-
+.addBtn:hover,
 .removeBtn:hover {
   opacity: 0.6;
 }

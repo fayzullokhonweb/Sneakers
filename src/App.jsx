@@ -18,7 +18,7 @@ function App() {
           element: <Contact />,
         },
         {
-          path: "Collections",
+          path: "collections",
           element: <Collections />,
         },
         {

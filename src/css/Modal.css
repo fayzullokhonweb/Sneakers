@@ -1,29 +1,30 @@
 .modal-overlay {
   position: fixed;
-  width: 360px;
   top: 80px;
-  right: 12px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  right: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   z-index: 1000;
-  padding: 24px 32px;
-  border-radius: 10px;
 }
 
 .modal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: white;
   border-radius: 8px;
-  width: 300px;
+  width: 360px;
   text-align: center;
+  padding: 20px;
+  position: relative;
+  z-index: 1001;
+
 }
 
-
+.closeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .modalLine {
   margin-top: 23px;
@@ -33,19 +34,16 @@
   margin-bottom: 24px;
 }
 
-.modal h2 {
-  font-size: 16px;
-  font-weight: 700;
-  text-align: left;
-}
-
 .close-button {
-  top: 10px;
-  right: 10px;
   background: none;
   border: none;
+  margin-top: 6px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.empty {
+  margin-bottom: 20px;
 }
 
 .cartProduct {
@@ -60,8 +58,9 @@
   height: 50px;
 }
 
-
-.cartProductItem {}
+.cartProductItem {
+  text-align: left;
+}
 
 .cartProductTitle {
   font-size: 15px;
@@ -82,6 +81,7 @@
   font-size: 16px;
   font-weight: 900;
   line-height: 26px;
+  margin-left: 10px;
 }
 
 .deleteBtn {
@@ -90,24 +90,6 @@
   border: none;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .checkoutBtn {
   width: 100%;
