@@ -20,7 +20,6 @@ function Home() {
 
   const addToBag = () => {
     const newProduct = {
-      id: selectedImage,
       img: selectedImage,
       amount: productAmount,
     };
@@ -81,7 +80,7 @@ function Home() {
                 <h3 className="result">{productAmount}</h3>
                 <button
                   onClick={() => setAmount("increase")}
-                  disabled={productAmount === 9}
+                  disabled={productAmount === 3}
                   className="addBtn"
                 >
                   +
